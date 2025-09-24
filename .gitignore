@@ -1,3 +1,4 @@
 __pycache__/
 enable_docker_desktop
 .env
+venv
