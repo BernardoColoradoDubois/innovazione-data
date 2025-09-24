@@ -7,7 +7,7 @@ from airflow.providers.standard.operators.python import BranchPythonOperator
 from airflow.providers.standard.operators.empty import EmptyOperator
 
 
-def hello_task():
+def hello_task(**kwargs):
   print("Hello, Airflow!")
 
 dag = DAG(dag_id="hello", start_date=datetime(2022, 1, 1), schedule="0 0 * * *")
